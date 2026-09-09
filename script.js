@@ -4,11 +4,11 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	let prices = Document.querySelectorAll("price")
+	let prices = Document.querySelectorAll(".price")
 	let sum = 0
 
 	prices.forEach(price=> {
-		sum+= Number(price.content)
+		sum+= Number(price.textContent)
 	})
 	let row = document.createElement("tr");
     let cell = document.createElement("td");
